@@ -1,4 +1,4 @@
-import "./main.css";
+import "./Main.css";
 import notFoundIcon from "../../images/not-found.svg";
 import Preloader from "../Preloader/Preloader";
 import SearchForm from "../SearchForm/SearchForm";
