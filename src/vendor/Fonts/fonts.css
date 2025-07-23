@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'RubikVinyl';
+    src: url('./RubikVinyl-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Bungee';
+    src: url('./BungeeShade-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

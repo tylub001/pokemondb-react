@@ -1,0 +1,148 @@
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 20px;
+  background: linear-gradient(to right, rgb(255, 2, 2), white);
+  border-bottom: 2px solid grey;
+}
+
+.header__logo {
+  font-family: "Bungee";
+  color: white;
+  border: 1px solid white;
+  padding: 3px 6px;
+  border-radius: 30px;
+}
+
+.header__logo-arial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes slideRight {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.nav__favorites {
+  text-decoration: none;
+  transition: transform 0.2s ease, 0.2s ease;
+}
+
+
+.nav__login,
+.nav__home,
+.nav__logout {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: grey;
+  font-weight: 600;
+  transition: transform 0.2s ease, 0.2s ease;
+  cursor: pointer;
+}
+.nav__home:hover,
+.nav__logout:hover,
+.nav__favorites:hover {
+  transform: translateY(-2px);
+}
+
+.nav__my {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 0, 0);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+
+
+.header__favorites, .nav__favorites {
+  font-family: "Bungee";
+  color: red;
+  font-size: 15px;
+  letter-spacing: -0.6px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  transform: skewY(-10deg);
+}
+
+.profile__icon {
+  width: 24px;
+  height: 24px;
+  display: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, 0.2s ease;
+}
+
+.profile__icon:hover {
+  transform: translateY(-2px);
+}
+
+.nav__icon-wrapper {
+  display: none;
+}
+
+.header__type_profile {
+  border: 2px solid grey;
+}
+
+
+
+@media screen and (max-width: 530px) {
+  .header {
+    padding: 10px;
+  }
+
+ 
+  .header--logged-in .nav__home,
+  .header--logged-in .nav__favorites,
+  .header--logged-in .nav__logout {
+    display: none;
+  }
+
+  .header--logged-in .nav__icon-wrapper {
+    display: flex;
+  }
+
+  .nav__icon-wrapper {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .profile__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .nav__login {
+    display: block;
+  }
+  .header__nav {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+
+}
+
+

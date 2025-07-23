@@ -1,0 +1,9 @@
+.modal__link {
+  margin-left: 8px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: #2f71e5;
+  cursor: pointer;
+}

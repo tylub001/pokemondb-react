@@ -1,0 +1,147 @@
+.author-footer {
+  background-image: url(../../images/twoteon.jpg);
+  padding: 40px 20px 0;
+  border-top: 2px solid #ccc;
+  background-size: cover;
+  position: relative;
+}
+
+.author-footer__content {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.nav__link-footer {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color:#bbb;
+  font-weight: 700;
+  padding-right:10px
+}
+
+.footer__image {
+  width: 30vw;
+  height: 30vw;
+  max-width: 364px;
+  max-height: 364px;
+  background-image: url("../../images/footerpic.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 3px solid #bbb;
+}
+
+.footer__text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.footer__heading {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.footer__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+.footer__name {
+  color: #bbb;
+  padding: 10px 0;
+  font-style: italic;
+}
+
+.nav__icon {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 1px;
+}
+
+@media screen and (max-width: 760px) {
+  .author-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
+  }
+
+  .footer__image {
+    order: 1;
+    margin-top: 10px;
+    justify-self: center;
+  }
+
+  .footer__text {
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .footer__description {
+    font-size: 0.7rem;
+    margin: 12px 0;
+  }
+
+  .footer__heading {
+    margin: 0;
+  }
+
+  .author-footer__content {
+    display: block;
+  }
+
+  .footer__year {
+    font-size: 12px;
+  }
+
+  .page__content {
+    padding: 20px 10px;
+  }
+
+  .footer__nav {
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  .footer__name {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0 auto;
+    padding-bottom: 0;
+    font-size: 12px;
+  }
+
+  .nav__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav__icon {
+    display: flex;
+    gap: 5px;
+  }
+
+  .nav__link-footer {
+    padding: 0;
+  }
+}
