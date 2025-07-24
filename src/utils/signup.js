@@ -1,10 +1,13 @@
-import { BACKEND_BASE_URL } from "./config";
+const BACKEND_BASE_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://api.pokefinal.jumpingcrab.com"
+    : "http://localhost:3002";
 
 function checkResponse(res) {
   if (res.ok) {
     return res.json();
   }
- 
+
   return res
     .json()
     .then((errorData) => {

@@ -1,5 +1,8 @@
 import { request } from "./signup";
-import { BACKEND_BASE_URL } from "../utils/config";
+const BACKEND_BASE_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://api.pokefinal.jumpingcrab.com"
+    : "http://localhost:3002";
 
 export function register({ name, email, password }) {
   return request(`${BACKEND_BASE_URL}/signup`, {

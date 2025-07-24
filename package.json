@@ -1,5 +1,6 @@
 {
-  "name": "pokemon",
+  "homepage": "https://pokefinal.jumpingcrab.com",
+  "name": "pokemondb",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && scp -r ./dist/* tylub001@pokefinal.jumpingcrab.com:/home/tylub001/frontend"
   },
   "dependencies": {
     "react": "^19.1.0",
